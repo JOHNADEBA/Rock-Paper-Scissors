@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game {
+  background-color: darkmagenta;
+  height: 100vh;
+  color: #eee5e2;
+}
+
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  text-align: center;
+  -webkit-transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.score p {
+  margin: 5px;
+  font-size: 25px;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.intro button {
+  background-color: dodgerblue;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  color: gainsboro;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.intro button:active {
+  background-color: green;
+}
+
+.match {
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.score-board {
+  text-align: center;
+  font-size: 50px;
+}
+
+.hands,
+.option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hands .computer-hand,
+.option .computer-hand {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.option button {
+  background-color: dodgerblue;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  color: gainsboro;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.option button:active {
+  background-color: green;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+/*# sourceMappingURL=style.css.map */
